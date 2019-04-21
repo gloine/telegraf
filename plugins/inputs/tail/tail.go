@@ -24,6 +24,7 @@ type Tail struct {
 	Files         []string
 	FromBeginning bool
 	Pipe          bool
+	Reopen          bool
 	WatchMethod   string
 
 	tailers    map[string]*tail.Tail
@@ -53,6 +54,8 @@ const sampleConfig = `
   files = ["/var/mymetrics.out"]
   ## Read file from beginning.
   from_beginning = false
+  ## Whether we reopen deleted files
+  reopen = true
   ## Whether file is a named pipe
   pipe = false
 
@@ -119,7 +122,7 @@ func (t *Tail) tailNewFiles(fromBeginning bool) error {
 
 			tailer, err := tail.TailFile(file,
 				tail.Config{
-					ReOpen:    true,
+					ReOpen:    t.Reopen,
 					Follow:    true,
 					Location:  seek,
 					MustExist: true,
