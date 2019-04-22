@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/influxdata/tail"
+	"github.com/gloine/tail"
 
 	"github.com/influxdata/telegraf"
 	"github.com/influxdata/telegraf/internal/globpath"
