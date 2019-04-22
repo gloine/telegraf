@@ -412,6 +412,28 @@
   revision = "25d852aebe32c875e9c044af3eef9c7dc6bc777f"
 
 [[projects]]
+  digest = "1:d529df1431904286438f7fe7cf2763370410b9caee5562b043635f1ebc2e547b"
+  name = "github.com/gloine/fsnotify"
+  packages = ["."]
+  pruneopts = ""
+  revision = "a57eacec99c1607a3c7b6d32b860177185fce5a4"
+  version = "v1.4.8"
+
+[[projects]]
+  branch = "master"
+  digest = "1:534777358024e0c96f0091b8985846a399c633c4bf8ff776a21e0a92c31ca638"
+  name = "github.com/gloine/tail"
+  packages = [
+    ".",
+    "ratelimiter",
+    "util",
+    "watch",
+    "winfile",
+  ]
+  pruneopts = ""
+  revision = "b5010566f38db182b3bdd95fe2a103bd34b542e2"
+
+[[projects]]
   digest = "1:858b7fe7b0f4bc7ef9953926828f2816ea52d01a88d72d1c45bc8c108f23c356"
   name = "github.com/go-ini/ini"
   packages = ["."]
@@ -638,20 +660,6 @@
   pruneopts = ""
   revision = "0cd00a9f0a5e5607d5ef9a294c260f77a74e3b5a"
   version = "v2.0.0"
-
-[[projects]]
-  branch = "master"
-  digest = "1:bc3eb5ddfd59781ea1183f2b3d1eb105a1495d421f09b2ccd360c7fced0b612d"
-  name = "github.com/influxdata/tail"
-  packages = [
-    ".",
-    "ratelimiter",
-    "util",
-    "watch",
-    "winfile",
-  ]
-  pruneopts = ""
-  revision = "c43482518d410361b6c383d7aebce33d0471d7bc"
 
 [[projects]]
   branch = "master"
@@ -1448,15 +1456,6 @@
   version = "v2.0.0"
 
 [[projects]]
-  digest = "1:eb53021a8aa3f599d29c7102e65026242bdedce998a54837dc67f14b6a97c5fd"
-  name = "gopkg.in/fsnotify.v1"
-  packages = ["."]
-  pruneopts = ""
-  revision = "c2828203cd70a50dcccfb2761f8b1f8ceef9a8e9"
-  source = "https://github.com/fsnotify/fsnotify/archive/v1.4.7.tar.gz"
-  version = "v1.4.7"
-
-[[projects]]
   digest = "1:960720207d3d0992995f4576e1366fd9e9b1483473b07fb7243144f75f5b1546"
   name = "gopkg.in/gorethink/gorethink.v3"
   packages = [
@@ -1572,6 +1571,7 @@
     "github.com/ericchiang/k8s/apis/resource",
     "github.com/ericchiang/k8s/util/intstr",
     "github.com/ghodss/yaml",
+    "github.com/gloine/tail",
     "github.com/go-logfmt/logfmt",
     "github.com/go-redis/redis",
     "github.com/go-sql-driver/mysql",
@@ -1590,7 +1590,6 @@
     "github.com/influxdata/go-syslog/nontransparent",
     "github.com/influxdata/go-syslog/octetcounting",
     "github.com/influxdata/go-syslog/rfc5424",
-    "github.com/influxdata/tail",
     "github.com/influxdata/toml",
     "github.com/influxdata/toml/ast",
     "github.com/influxdata/wlog",
