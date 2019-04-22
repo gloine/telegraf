@@ -75,7 +75,7 @@
   version = "2.0.0"
 
 [[constraint]]
-  name = "github.com/influxdata/tail"
+  name = "github.com/gloine/tail"
   branch = "master"
 
 [[constraint]]
