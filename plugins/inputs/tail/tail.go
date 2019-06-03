@@ -188,7 +188,7 @@ func (t *Tail) receiver(parser parsers.Parser, tailer *tail.Tail) {
 		if err == nil {
 			if m != nil {
 				tags := m.Tags()
-				tags["path"] = tailer.Filename
+				//tags["path"] = tailer.Filename
 				t.acc.AddFields(m.Name(), m.Fields(), tags, m.Time())
 			}
 		} else {
